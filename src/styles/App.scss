@@ -21,3 +21,15 @@ body {
     padding: 0;
     min-width: fit-content;
 }
+
+main {
+    background-color: $background-grey;
+    margin-top: 60px;
+    align-content: center;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        font-weight: 1000px;
+    }
+}

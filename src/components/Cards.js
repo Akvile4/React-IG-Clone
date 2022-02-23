@@ -1,3 +1,4 @@
+import "../styles/cards.scss"
 import Card from "./Card";
 
 const Cards = () => {
