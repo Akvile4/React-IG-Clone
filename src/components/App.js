@@ -1,4 +1,5 @@
 import '../styles/App.scss';
+import logo from "../images/igLogo.png"
 import Cards from './Cards';
 import Navbar from "./Navbar";
 import { useState } from 'react';
@@ -29,8 +30,13 @@ const App = () => {
         </form>
         <button onClick={}>Sign Up</button> */}
         {/* <SignUp userStateChange={setUser}/> */}
-        <Login userStateChange={setUser} />
-        <SignUp userStateChange={setUser}/>
+        <div className="box">
+          <img className="logo" src={logo} alt="instagram logo" />
+          <Login userStateChange={setUser} />
+          <SignUp userStateChange={setUser}/>
+        </div>
+        {/* <Login userStateChange={setUser} />
+        <SignUp userStateChange={setUser}/> */}
       </main>
       }
       

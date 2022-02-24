@@ -1,0 +1,54 @@
+$background-white: #ffffff;
+$background-grey: #fafafa;
+$gradient-one: #da3394;
+$gradient-two: #e03c67;
+$gradient-three: #f3753b;
+$gradient-four: #f99b4a;
+$font-color-primary: #262626;
+$font-color-secondary: #8e8e8e;
+$font-color-footer: #c7c7c7;
+$border-color-grey: #dbdbdb;
+$border-color-grey-secondary: #efefef;
+$link-color: #0095f6;
+$link-color-secondary: #b3dffc;
+$font: "Montserrat", sans-serif; 
+
+.signUpBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        font-family: $font;
+        font-size: 16px;
+        color: $font-color-primary;
+    }
+
+    .signUpBar {
+        padding: 1px 2px;
+        margin: 0.5em;
+        font-family: $font;
+        width: 258px;
+        height: 36px;
+        border: 1px solid $border-color-grey;
+        border-radius: 0.3em;
+
+    }
+
+    .signUpButton {
+        padding: 1px 2px;
+        margin: 0.5em;
+        font-family: $font;
+        width: 258px;
+        height: 36px;
+        background-color: $link-color;
+        border: none;
+        border-radius: 0.3em;
+        color: $background-white;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

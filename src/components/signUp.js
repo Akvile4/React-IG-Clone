@@ -1,3 +1,4 @@
+import "../styles/signUp.scss";
 import { useState } from 'react';
 import { fetchRequest } from '../utils';
 
@@ -15,10 +16,23 @@ const SignUp = ({userStateChange}) => {
 
     return (
         <form onSubmit={submitHandler}>
-        <input onChange={(e) => setUsername(e.target.value)}/>
-        <input onChange={(e) => setEmail(e.target.value)}/>
-        <input onChange={(e) => setPassword(e.target.value)}/>
-        <button type="submit"> Sign Up </button>
+        <div className="signUpBox">
+            <div>
+                <h2>Sign up here!</h2>
+            </div>
+            <div>
+                <input className="signUpBar" onChange={(e) => setUsername(e.target.value)} placeholder="Username"/>
+            </div>
+            <div>
+                <input className="signUpBar" onChange={(e) => setEmail(e.target.value)} placeholder="Email"/>
+            </div>
+            <div>
+                <input className="signUpBar" onChange={(e) => setPassword(e.target.value)} placeholder="Password"/>
+            </div>
+            <div>
+                <button className="signUpButton" type="submit"> <strong>Sign Up</strong></button>
+            </div>
+        </div>
         </form>
     )
 }
